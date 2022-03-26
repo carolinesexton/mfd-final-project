@@ -1,19 +1,20 @@
 /* No CSS *//*# sourceMappingURL=main.css.map */
+@import url('./_variables.css');
+@import url('./_colors.css');
+
 body {
     height: 100%;
     margin: 0;
     padding: 0;
-    font: 400 15px/1.8 "Lato", sans serif;
-    color: #6bc0da;
+    /* font: 400 15px/1.8 "Lato", sans serif; */
 }
 
 .navbar {
     position: fixed;
     width: 100%;
-    background-color: #f3f9f4;
+    background-color: #464543;
     z-index: 200;
 }
-
 
 .bgimg-1, .bgimg-2, .bgimg-3 {
     position: relative;
@@ -28,7 +29,6 @@ body {
 h3 {
     text-align: justify;
     letter-spacing: 5px;
-    
     text-transform: uppercase;
     font: 30px "Lato", sans-serif;
 }
@@ -54,12 +54,11 @@ h3 {
     top: 50%;
     width: 100%;
     text-align: center;
-    color: rgb(247, 166, 166);
+    color: #f7f2f2;
+    text-shadow: 2px 2px 4px #000
 }
 
 .caption span.border {
-    background-color: rgb(251, 252, 240);
-    color: rgb(239, 206, 18);
     padding: 18px;
     font-size: 25px;
     letter-spacing: 10px;
