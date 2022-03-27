@@ -2,18 +2,20 @@
 
 
 body {
+    /* background-color: #af8242; */
+    font-family:'Hurricane', cursive;
+    font-weight: bolder;
     height: 100%;
     margin: 0;
     padding: 0;
-    /* font: 400 15px/1.8 "Lato", sans serif; */
+    font: 400 15px/1.8 "Lato", sans serif;
 }
 
 .navbar {
     position: fixed;
-    text-size-adjust: auto;
     width: 100%;
     font-size: larger;
-    background-color: #af8242;
+    background-color: #af8242 !important;
     z-index: 10;
 }
 
@@ -52,9 +54,10 @@ body {
     top: 50%;
     width: 100%;
     text-align: center;
-    -webkit-text-size-adjust: inherit;
+    color: #ff00ff;
+    /* -webkit-text-size-adjust: inherit; */
     text-shadow: 2px 2px 6px black;
-    color: #ffffff;
+    z-index: 2;
 }
 
 .caption span.border {
@@ -69,19 +72,27 @@ body {
     text-align: center;
     padding: 30px 80px;
     text-align: justify;
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 }
+
+.container-fluid{
+    background-color: #af8242;
+    z-index: 30;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
