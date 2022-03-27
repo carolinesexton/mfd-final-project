@@ -15,86 +15,79 @@
     <link rel="stylesheet" href="css/main.css">
     <title>mfd final project</title>
   </head>
-  <body class="bg-primary">
+  <body>
 
       <!-- navbar -->
 
-      <section>
-            <nav class="navbar navbar-expand-lg">
-                <div class="container-fluid">
-                  <a class="navbar-brand" href="#"><img src="img/logo.png" alt="logo SSS"></a>
-                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                  </button>
-                  <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                      <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">HOME</a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link" href="#">Gallery</a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link" href="#">Animal Portraits</a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link" href="#">About</a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
-                      </li>
-                    </ul>
-        
-                  </div>
-                </div>
-              </nav>
-            <!-- </div> -->
-          </section>
+    </section>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#"><img src="img/logo.png" alt="logo SSS"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">About</a>
+            </li>
+            
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Gallery
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                <li><a class="dropdown-item" href="#">Pet Portraits</a></li>
+                <li><a class="dropdown-item" href="#">Animals</a></li>
+                <li><a class="dropdown-item" href="#">Landscapes</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
 
 <!-- parallax main home page -->
 
 <section style="position: relative; top:100px;">
-  <div class="container" style="margin-top: 0px; padding-top:40px">
+  <div class="parallax_img" style="margin-top: 0px; padding: 60px;">
     <div class="bgimg-1">
-      <div class="caption">
-        <span class="border" style="padding:30px 80px; color:white;">Artist Susan Sexton Shrum</span>
+      <div class="caption" style="text-shadow: 2px 2px 6px black;">
+      <h1>ARTIST SUSAN SEXTON SHRUM</h1>
       </div>
     </div>
     
-    <div style="color: rgb(227, 247, 224);padding:30px 80px; text-align: justify;">
-      <h3 class="h3 text-center">Inspired By Nature</h3>
-      <p>Susan has always loved being immursed in the glory of nature and all it's beauty. Susan lives on the outskirts of beautiful Charlottesville, Virginia.  The blueridge mountains, the forests, the waterways and all the flora and fauna that inhabit are her inspiration</p>
+    <div style="padding: 30px 40px">
+      <div class="space"></div>
     </div>
     
     <div class="bgimg-2">
-      <div class="caption">
-        <span class="border" style="font-size: 25px;color:#f13232; text-shadow: 2px 2px 4px #000;">Blue Ridge Mountains</span>
-    
+      <div class="caption" style="text-shadow: 2px 2px 6px black;">
+        <span class="border">ANIMALS</span>
       </div>
     </div>
     
     <div style="position: relative;">
-      <div style="color: white; text-align: center; padding: 30px 80px; text-align: justify;">
-        <p>Scroll up and down to really get the feeling of how the parallax scrolling works.</p>
-      </div>
+      <div class="space"></div>
     </div>
     
-    
     <div class="bgimg-3">
-      <div class="caption">
-      <span class="border" style="font-size: 25px;">Beauty in Nature</span>
+      <div class="caption" style="text-shadow: 2px 2px 6px black;">
+      <span class="border">PET PORTRAITS</span>
       </div>
     </div>
 
     <div style="position: relative;">
-      <div style="color:white;text-align:center;padding:30px 80px;text-align:justify;">
-        <p>Scroll up and down to really get the feeling of how the parallax scrolling works.</p>
-      </div>
+      <div class="space"></div>
     </div>
     
     <div class="bgimg-1">
         <div class="caption">
-          <span class="border" style="color:white;text-align:center;padding:30px 80px;">Abstract Spring</span>
+          <span class="border" style="text-shadow: 2px 2px 6px black; padding:30px 80px;">LANDSCAPES</span>
         </div>
     </div>
   </div>
@@ -104,6 +97,39 @@
     <!-- Option 1: Bootstrap Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 
-    
+<!-- parallax additional javascript to resize -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<script type="text/javascript">
+/*resize the image(s) on page load */
+$(document).ready(function(){
+  resize_all_parallax();
+});
+
+/* resize the image(s) on page resize */
+$(window).on('resize', function(){
+  resize_all_parallax();
+});
+
+/* keep all of your resize function calls in one place so you don't have to edit them twice (on page load and resize)*/
+function resize_all_parallax() {
+  var div_id = 'img1'; /* the ID of the div that you're resizing */
+  var img_w = 1000; /* the width of your image, in pixels */
+  var img_h = 864; /* the height of your image, in pixels */
+  resize_parallax(div_id,img_w,img_h) 
+}
+
+/* this resizes the parallax image down to an appropriate size for the viewport */
+function resize_parallax(div_id,img_w,img_h) {
+  var div = $('#' + dvi_id);
+  var divwidth = div.width();
+  if (divwidth < 769) { var pct = (img_h/img_w) * 105; } /*show full image, plus a little padding, if on static mobile view */
+  else { var pct = 60; } /* this is the HEIGHT as percentage of the current div WIDTH.  you can change it to show more (or less) of your image */
+  var newheight = Math.round(divwidth * (pct/100));
+  newheight = newheight + 'px';
+  div.height(newheight);
+}
+
+
+</script>  
   </body>
 </html>

@@ -1,6 +1,5 @@
-/* No CSS *//*# sourceMappingURL=main.css.map */
-@import url('./_variables.css');
-@import url('./_colors.css');
+
+
 
 body {
     height: 100%;
@@ -11,9 +10,11 @@ body {
 
 .navbar {
     position: fixed;
+    text-size-adjust: auto;
     width: 100%;
-    background-color: #464543;
-    z-index: 200;
+    font-size: larger;
+    background-color: #af8242;
+    z-index: 10;
 }
 
 .bgimg-1, .bgimg-2, .bgimg-3 {
@@ -22,30 +23,27 @@ body {
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
-    background-size: cover;
-    z-index: -1;
+    background-size: 100% auto;
 }
 
-h3 {
-    text-align: justify;
-    letter-spacing: 5px;
-    text-transform: uppercase;
-    font: 30px "Lato", sans-serif;
+@media screen and (max-width: 768px) {
+    .parallax_img {
+        background-attachment: inherit;
+    }
 }
-
 .bgimg-1 {
     background-image: url(/img/waterscape.png);
-    min-height: 700px;
+    min-height: 800px;
 }
 
 .bgimg-2 {
-    background-image: url(/img/forestandmountains.jpg);
-    min-height: 700px;
+    background-image: url(/img/abstract-blue-owl.png);
+    min-height: 800px;
 }
 
 .bgimg-3 {
-    background-image: url(/img/blueridgemountainlaurel.jpg);
-    min-height: 700px;
+    background-image: url(/img/tux.png);
+    min-height: 800px;
 }
 
 .caption {
@@ -54,16 +52,23 @@ h3 {
     top: 50%;
     width: 100%;
     text-align: center;
-    color: #f7f2f2;
-    text-shadow: 2px 2px 4px #000
+    -webkit-text-size-adjust: inherit;
+    text-shadow: 2px 2px 6px black;
+    color: #ffffff;
 }
 
 .caption span.border {
     padding: 18px;
-    font-size: 25px;
+    font-size: 30px;
     letter-spacing: 10px;
+    font-weight: 500;
 }
 
+.space {
+    color: white;
+    text-align: center;
+    padding: 30px 80px;
+    text-align: justify;
 
 
 
@@ -77,3 +82,6 @@ h3 {
 
 
 
+
+
+}

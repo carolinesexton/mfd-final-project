@@ -1,5 +1,0 @@
-@import url('./_variables.css');
-
-.bg-primary {
-    background-color: var(--color-primary);
-}
