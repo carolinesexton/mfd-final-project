@@ -1,6 +1,3 @@
-
-
-
 body {
     /* background-color: #af8242; */
     font-family:'Hurricane', cursive;
@@ -78,6 +75,16 @@ body {
     background-color: #af8242;
     z-index: 30;
 }
+
+/* carousel styling */
+
+.carousel-item img {
+    height: 50vh; 
+    overflow: hidden;
+    object-fit: contain;
+    object-position: center;
+}
+
 
 
 
