@@ -27,11 +27,6 @@ body {
     height: 70vh;
 }
 
-@media screen and (max-width: 768px) {
-    .parallax_img {
-        background-attachment: inherit;
-    }
-}
 .bgimg-1 {
     background-image: url(/img/waterscape.png);
     min-height: 800px;
@@ -45,6 +40,24 @@ body {
 .bgimg-3 {
     background-image: url(/img/tux.png);
     min-height: 800px;
+}
+@media screen and (max-width: 500px) {
+    .bgimg-1 .bgimg-2 .bgimg-3 {
+        width: fit-content;
+        block-size: fit-content;
+    }
+}
+@media screen and (max-width: 1000px) {
+    .bgimg-1 .bgimg-2 .bgimg-3 {
+        width: fit-content;
+        block-size: fit-content;
+    }
+}
+@media screen and (max-width: 1200px) {
+    .bgimg-1 .bgimg-2 .bgimg-3 {
+        width: fit-content;
+        block-size: fit-content;
+    }
 }
 
 .caption {
@@ -81,10 +94,20 @@ body {
 /* carousel styling */
 
 .carousel-item img {
-    height: 50vh; 
+    height: 60vh; 
     overflow: hidden;
     object-fit: contain;
     object-position: center;
+}
+
+/* CARDS */
+
+.card {
+    object-fit: contain;
+    height: 40vh;
+    overflow: hidden;
+    text-align: center;
+    font-size: 30px !important;
 }
 
 
