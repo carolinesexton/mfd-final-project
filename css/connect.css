@@ -1,0 +1,89 @@
+body {
+    /* background-color: #af8242; */
+    font-family:'Hurricane', cursive;
+    font-weight: bolder;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font: 400 15px/1.8 "Lato", sans serif;
+}
+
+.navbar {
+    position: fixed;
+    width: 100%;
+    font-size: larger;
+    background-color: #af8242 !important;
+    z-index: 10;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #af8242;
+    border-radius: 4px;
+    resize: vertical;
+}
+
+label {
+    padding: 12px 12px 12px 0;
+    display: inline-block;
+}
+
+input[type=submit] {
+    background-color: white;
+    color: gold;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    float: right;
+}
+
+input[type=submit]:hover {
+    background-color: #451049;
+}
+
+.container {
+    border-radius: 5px;
+    background-color: gold;
+    padding: 20px;
+} 
+
+.col-25 {
+    float: left;
+    width: 25%;
+    margin-top: 6px;
+}
+
+.col-75 {
+    float: left;
+    width: 75%;
+    margin-top: 6px;
+}
+
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Responsive layout - when the screen is less than 600px wide, make the two column stack on top of each other instead of next to each other */
+@media screen and (max-width) {
+    .col-25, .col-75, input[type=submit] {
+        width: 100%;
+        margin-top: 0;
+    }
+}
+
+@media screen and (max-height) {
+    .footer {
+        height: 100%;
+    }
+      
+}

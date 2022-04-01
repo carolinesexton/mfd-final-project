@@ -1,19 +1,20 @@
-/* No CSS *//*# sourceMappingURL=main.css.map */
 body {
+    /* background-color: #af8242; */
+    font-family:'Hurricane', cursive;
+    font-weight: bolder;
     height: 100%;
     margin: 0;
     padding: 0;
     font: 400 15px/1.8 "Lato", sans serif;
-    color: #6bc0da;
 }
 
 .navbar {
     position: fixed;
     width: 100%;
-    background-color: #f3f9f4;
-    z-index: 200;
+    font-size: larger;
+    background-color: #af8242 !important;
+    z-index: 10;
 }
-
 
 .bgimg-1, .bgimg-2, .bgimg-3 {
     position: relative;
@@ -21,31 +22,42 @@ body {
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
-    background-size: cover;
-    z-index: -1;
-}
-
-h3 {
-    text-align: justify;
-    letter-spacing: 5px;
-    
-    text-transform: uppercase;
-    font: 30px "Lato", sans-serif;
+    background-size: 100% auto;
+    /* object-fit: contain;  */
+    height: 70vh;
 }
 
 .bgimg-1 {
     background-image: url(/img/waterscape.png);
-    min-height: 700px;
+    min-height: 800px;
 }
 
 .bgimg-2 {
-    background-image: url(/img/forestandmountains.jpg);
-    min-height: 700px;
+    background-image: url(/img/abstract-blue-owl.png);
+    min-height: 800px;
 }
 
 .bgimg-3 {
-    background-image: url(/img/blueridgemountainlaurel.jpg);
-    min-height: 700px;
+    background-image: url(/img/tux.png);
+    min-height: 800px;
+}
+@media screen and (max-width: 500px) {
+    .bgimg-1 .bgimg-2 .bgimg-3 {
+        width: fit-content;
+        block-size: fit-content;
+    }
+}
+@media screen and (max-width: 1000px) {
+    .bgimg-1 .bgimg-2 .bgimg-3 {
+        width: fit-content;
+        block-size: fit-content;
+    }
+}
+@media screen and (max-width: 1200px) {
+    .bgimg-1 .bgimg-2 .bgimg-3 {
+        width: fit-content;
+        block-size: fit-content;
+    }
 }
 
 .caption {
@@ -54,16 +66,54 @@ h3 {
     top: 50%;
     width: 100%;
     text-align: center;
-    color: rgb(247, 166, 166);
+    color: #ff00ff;
+    /* -webkit-text-size-adjust: inherit; */
+    text-shadow: 2px 2px 6px black;
+    z-index: 2;
 }
 
 .caption span.border {
-    background-color: rgb(251, 252, 240);
-    color: rgb(239, 206, 18);
     padding: 18px;
-    font-size: 25px;
+    font-size: 30px;
     letter-spacing: 10px;
+    font-weight: 500;
 }
+
+.space {
+    color: white;
+    text-align: center;
+    padding: 30px 80px;
+    text-align: justify;
+}
+
+.container-fluid{
+    background-color: #af8242;
+    z-index: 30;
+}
+
+/* carousel styling */
+
+.carousel-item img {
+    height: 60vh; 
+    overflow: hidden;
+    object-fit: contain;
+    object-position: center;
+}
+
+/* CARDS */
+
+.card {
+    object-fit: contain;
+    height: 40vh;
+    overflow: hidden;
+    text-align: center;
+    font-size: 30px !important;
+}
+
+
+
+
+
 
 
 
