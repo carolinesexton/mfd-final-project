@@ -28,17 +28,17 @@ body {
 }
 
 .bgimg-1 {
-    background-image: url(./img/waterscape.png);
+    background-image: url("./img/waterscape.png");
     min-height: 800px;
 }
 
 .bgimg-2 {
-    background-image: url(./img/abstract-blue-owl.png);
+    background-image: url("./img/abstract-blue-owl.png");
     min-height: 800px;
 }
 
 .bgimg-3 {
-    background-image: url(./img/tux.png);
+    background-image: url("./img/tux.png");
     min-height: 800px;
 }
 @media screen and (max-width: 500px) {
